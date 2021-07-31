@@ -5,6 +5,7 @@ public class Assignment2Application {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int answer = 1 + (int)(Math.random() * 100);
+		System.out.println(answer);
         Scanner sc = new Scanner(System.in);
         boolean flag = false;
         System.out.println("Pick a number between 1 and 100");
@@ -24,6 +25,7 @@ public class Assignment2Application {
                 if (guess == answer) {
                     System.out.println("You win!");
                     flag = true;
+                    break;
                 }
             } else {
                 System.out.println("incorrect input, try again");
